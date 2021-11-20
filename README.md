@@ -22,9 +22,11 @@ Using Arduino framework.
 Within `lib` you will find four libraries: `wifi`, `mqtt`, `lcd`, and `vibrate`. 
 They provide functionality for dealing with their respective fields.
 
+Each library has it's configuration definitions within their respective header file.
+
 ### `wifi` - `lib/wifi`
 
-Simple library that continouly attempts to connect to the wifi.
+Simple library that continously attempts to connect to the wifi.
 Define `SSID` and `PASSPHRASE` accordingly.
 
 ### `mqtt` - `lib/mqtt`
@@ -52,6 +54,3 @@ Used to print messages to the LCD screen.
 ### `vibrate` - `lib/vibrate`
 
 Used to vibrate the motor.
-
-
-Each library has it's configuration definitions within their respective header file.

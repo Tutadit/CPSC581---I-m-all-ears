@@ -33,7 +33,7 @@ void setup_mqtt(handler handle_vibrate,
 {  
   vibrate_handler = handle_vibrate;
   message_handler = handle_message;
-  client.setServer(mqtt_server, 1883);
+  client.setServer(mqtt_server, MQTT_PORT);
   client.setCallback(mqtt_hanlder);
 }
 

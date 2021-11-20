@@ -4,6 +4,7 @@
 #include <PubSubClient.h>
 
 #define MQTT_SERVER "192.168.1.74"
+#define MQTT_PORT 1883
 
 #define CLIENT_ID "AllEarsClient"
 #define MESSAGE_TOPIC "message"

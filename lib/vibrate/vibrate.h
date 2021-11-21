@@ -3,7 +3,7 @@
 
 #include <Arduino.h>
 
-#define VIBRATE_FREQUENCY 31 // Hz
+#define VIBRATE_FREQUENCY 130 // Hz
 #define VIBRATE_LENGTH 500   // ms
 
 #define VIBRATOR_UP 13

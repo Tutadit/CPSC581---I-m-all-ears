@@ -18,7 +18,9 @@ void scrollMessage(char *message, unsigned int length)
 
 void printMessage(char *message)
 {
+
     int message_length = strlen(message);
+    lcd.backlight(); 
     lcd.clear();
     if (message_length > 16)
     {
@@ -30,10 +32,10 @@ void printMessage(char *message)
     }
     delay(MESSAGE_DISPLAY_TIME);
     lcd.clear();
+    lcd.noBacklight();    
 }
 
 void setup_lcd()
 {
-    lcd.init();      // initialize the led
-    lcd.backlight(); // open the backlight
+    lcd.init();      // initialize the led    
 }

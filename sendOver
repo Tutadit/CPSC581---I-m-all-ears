@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [[ -z $2 ]]; then
+    echo "Usage $0 [message] [direction]"
+    exit
+fi
+
+msg="$1"
+dir="$2"
+
+mosquitto_pub -t "vibrate" -m "$dir"
+mosquitto_pub -t "message" -m "$msg"

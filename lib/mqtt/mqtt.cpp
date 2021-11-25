@@ -42,7 +42,7 @@ void reconnect()
   while (!client.connected())
   {
     String clientId = CLIENT_ID;
-    if (client.connect(clientId.c_str()))
+    if (client.connect(clientId.c_str(), USERNAME, PASSWORD))
     {
       client.subscribe(MESSAGE_TOPIC);
       client.subscribe(VIBRATE_TOPIC);

@@ -10,3 +10,4 @@ dir="$2"
 
 mosquitto_pub -t "vibrate" -m "$dir"
 mosquitto_pub -t "message" -m "$msg"
+mosquitto_pub -t "message" -m "$msg"

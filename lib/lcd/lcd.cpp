@@ -78,8 +78,7 @@ void setup_lcd()
     lcd.printByte(1);
     lcd.printByte(0);
     lcd.print(" I'm all ears");
-    lcd.setCursor(0,1);
-    lcd.print(" CPSC 581 Prject");
+    lcd.setCursor(0,1);    
     delay(MESSAGE_DISPLAY_TIME * 2);
     lcd.noBacklight();
     lcd.clear();
